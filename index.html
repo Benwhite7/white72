@@ -38,9 +38,12 @@
             justify-content: center;
             border-radius: 10px;
         }
-      .card {
-        background: skyblue;
+      .card { 
         height: 100%;
+        display: flex;
+        flex-direction: row; 
+        justify-content:center ;
+        margin: 30px;
       }
       .item div{
        background-color: purple;
@@ -58,41 +61,35 @@
        color: white;
        text-align: center;
       }
-      .container {
-        display: flex;
-        flex-direction: row; 
-        justify-content:center ;
+      p:nth-child(5){
+        background: gold;
+        width: 160px;
+        height: 40px;
+        margin-left: 390px;
+        border-radius: 20px;
       }
-      .container .item {
-          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-          color: black;
-          width: 190px;
-          height: 150px;
-          margin: 20px;
-          padding: 65px;
-          box-sizing: border-box;
-          text-align: center;
+      p:nth-child(6){
+        background: silver;
+        width: 120px;
+        height: 40px;
+        text-align:center;
+        margin-left: 620px;
+        border-radius: 20px;
       }
-      .container .item:nth-child(1)
-      {
-       background: white  ;
-       border-color: darkblue;
-       border: 8px solid darkblue;
+      p:nth-child(7){
+        background: chocolate;
+        width: 120px;
+        height: 40px;
+        margin-left: 820px;
+        border-radius: 20px;
       }
-      .container .item:nth-child(2)
-      {
-       background: crimson ;
-       border-color: black;
-       border: 8px solid black;
+      .card img {
+        background:white;
+        width: 100%;
+        border-color: purple;
+        border: 3px solid purple;
+        border-radius: 20px;
       }
-      .container .item:nth-child(3)
-      {
-       background: red  ;
-       border-color: white;
-       border: 8px solid white;
-       ;
-      }
-
       input {
         background: white;
         border-color: purple;
@@ -112,10 +109,10 @@
     </section>
     <p>Los principales goleadores de esta competicion son :</p>
   </div>
-  <div class="item">
- <div>Cristiano Ronaldo</div><div>141 Goles</div>
- <section>
- <img src="cr7.jpeg" alt="CR7">
+   <div class="item">
+      <div>Cristiano Ronaldo</div><div>141 Goles</div>
+   <section>
+  <img src="cr7.jpeg" alt="CR7">
 </section>
  <div>Lionel Messi</div><div>125 Goles</div>
  <section>
@@ -127,15 +124,37 @@
 </section>
 </div>
   <p>Los equipos que ganaron mas veces esta competicion son :</p>
-<div class="container">
-  <div class="item">Real Madrid</div>
-  <div class="item">Milan</div>
-  <div class="item">Liverpool</div>
+  <section>
+   <div class="card">
+     <img src="EscudoRm.png" alt="Escudo del Real Madrid">
+   </div>
+   <div class="card">
+    <img src="escudoM.png" alt="Escudo Milan">
+   </div>
+   <div class="card">
+    <img src="EscudoLiverpool.png" alt="EscudoLiverpool">
+   </div>
+  </section>
+  <p>Real Madrid <br> (14 Titulos) </p> <p> Milan <br> (7 Titulos) </p> <p> Liverpool <br> (6 Titulos) </p>
 </div>
  <p>Pon aprueba tu conocimiento </p>
  <p>¿Quien es el jugador que posee mas trofeos de la Liga de campeones?</p>
- <input type="text" name ="Escribelo">
+ <input type="text" id="texto_lineas"/>
+ <input type="button" value="Pruebalo" id="botoncito"/> 
  <p>Para mas informacion haga click <a href="https://es.uefa.com/uefachampionsleague/">aqui</a></p>
- 
+ <script>
+  var texto = document.getElementById("texto_lineas");
+  var boton = document.getElementById("botoncito");
+  boton.addEventListener("click" , DibujoporClick);
+
+
+  function DibujoporClick()
+  {
+   if (texto=="Paco")
+   {
+    document.write("correcto")
+   }
+  }
+ </script>
 </body>
 </html>
