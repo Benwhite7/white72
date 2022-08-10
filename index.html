@@ -1,160 +1,212 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
     <title>Html</title>
     <style>
-        * {
-        background-color: blue ;
-        }
+      body {
+        font-family: 'Quicksand', sans-serif ;
+      }
        a[href="https://es.uefa.com/uefachampionsleague/"] 
        {
          color : white ;
          text-align: center;
        }
        div h1 {
-               background: darkmagenta;
+               background: purple;
                color: white;
                height: 40px;
-               width: 330px;
-               margin-left: 500px;
+               width: 1340px;
                text-align: center;
-               font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                border-radius: 10px;
               }
-       div p:nth-child(2) {
-        color: white;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      .title {
+        background: darkblue;
+        height: 40px;
+        width: 740px;
         text-align: center;
+        margin-left: 270px;
       }
-      div p:nth-child(4){
-        color: white;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        text-align: center;
+      .history {
+        margin-bottom: 10px;
       }
-      section {
-            background-color: blue;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            border-radius: 10px;
-        }
-      .card { 
+      .img-container {
+        width: 1000px;
+        height: 700px;
+        object-fit: cover;
+        margin-left: 160px;
+      }
+      .img-container img {
+        width:100%;
         height: 100%;
-        display: flex;
-        flex-direction: row; 
-        justify-content:center ;
-        margin: 30px;
+
       }
-      .item div{
-       background-color: purple;
-       color: white;
-       width: 200px;
-       height:20px ;
-       text-align: center;
-       margin-left: 580px;
-       border-radius: 10px;
-       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-       margin-top: 10px;
+       div p:nth-child(2) {
+        color: black;
+        text-align: center;
       }
-      p {
-       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-       color: white;
-       text-align: center;
+      div p:nth-child(6){
+        color:black;
+        text-align: center;
       }
-      p:nth-child(5){
-        background: gold;
-        width: 160px;
-        height: 40px;
-        margin-left: 390px;
-        border-radius: 20px;
+      .cards-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill , 360px);
+        place-content: center;
+        gap: 14px;
       }
-      p:nth-child(6){
-        background: silver;
-        width: 120px;
-        height: 40px;
-        text-align:center;
-        margin-left: 620px;
-        border-radius: 20px;
+      .subtitle {
+        text-align: center;
+        margin-top: 20px;
+        background: purple;
+        color: white;
       }
-      p:nth-child(7){
-        background: chocolate;
-        width: 120px;
-        height: 40px;
-        margin-left: 820px;
-        border-radius: 20px;
-      }
-      .card img {
-        background:white;
-        width: 100%;
-        border-color: purple;
-        border: 3px solid purple;
-        border-radius: 20px;
-      }
-      input {
+      .player-card {
+        width: 300px;
         background: white;
-        border-color: purple;
-        border: 3px solid purple;
-        margin-left: 570px;
       }
+      .player-card img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 20px;
+        border: 5px solid purple;
+      }
+      .player-info {
+        text-align: center;
+        font-weight: bold;
+      }
+      .team-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill , 260px);
+        place-items: center;
+      }
+      .team-card {
+        width: 200px;
+        background: white;
+        place-content: center ;
+      }
+      .team-card img {
+        margin-top: 20px;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+      .Rm-borde {
+        border: 5px solid gold;
+      }
+      .Mi-borde {
+        border : 5px solid silver;
+      }
+      .Lv-borde {
+        border: 5px solid chocolate;
+      }
+      .Bm-borde,
+      .Br-borde {
+        border: 5px solid purple;
+       }
+      .team-info  {
+        text-align: center;
+        font-weight: bold;
+      }
+      
+
     </style>
 </head>
 <body>
-  <div>
+  <div class="card">
       <h1>La liga de Campeones</h1>
-        <p>Una de los principales torneos del mundo donde participan clubes de diferentes paises europeos como Inglaterra, Alemania ,<br>España , Italia , Francia , Austria , Belgica , Paises Bajos , etc </p>
-   <section>
-           <div class="container">
-            <img src="https://static.inter.it/img/381449-1260da171760530479fba406c30590c53df5991b301c7dc5a074887e63876a95.jpg"    alt="Imagen del torneo">
-           </div>
-    </section>
+        <p>Uno de los principales torneos del mundo donde participan clubes de diferentes paises europeos como Inglaterra, Alemania ,<br>España , Italia , Francia , Austria , Belgica , Paises Bajos , etc </p>
+         <h1 class="title">Historia</h1>
+         <div class="history">La historia de la UEFA Champions League nació como la antigua Copa de Europa en 1955 gracias a la revista francesa L´Equipe. El periodista Gabriel Hanot ideó una competición que enfrentase a los clubes campeones de toda Europa para decidir quién era el mejor del continente.La UEFA fue fundada el 15 de junio de 1954 en Basilea, Suiza, después de conversaciones entre las asociaciones de fútbol francés, italiano y belga. La sede estaba en París hasta 1959, cuando la organización se trasladó a Berna. Henri Delaunay fue el primer Secretario General y Ebbe Schwartz el presidente.</div>
+            <div class="img-container">
+              <img src="https://static.inter.it/img/381449-1260da171760530479fba406c30590c53df5991b301c7dc5a074887e63876a95.jpg"    alt="Imagen del torneo">
+            </div> 
     <p>Los principales goleadores de esta competicion son :</p>
-  </div>
-   <div class="item">
-      <div>Cristiano Ronaldo</div><div>141 Goles</div>
-   <section>
-  <img src="cr7.jpeg" alt="CR7">
-</section>
- <div>Lionel Messi</div><div>125 Goles</div>
- <section>
- <img src="Lm10.jpg" alt="">
-</section>
- <div>Robert Lewandowski</div><div>86 Goles</div>
- <section>
- <img src="Rl9.jpg " alt="Lewandowski">
-</section>
-</div>
-  <p>Los equipos que ganaron mas veces esta competicion son :</p>
-  <section>
-   <div class="card">
-     <img src="EscudoRm.png" alt="Escudo del Real Madrid">
-   </div>
-   <div class="card">
-    <img src="escudoM.png" alt="Escudo Milan">
-   </div>
-   <div class="card">
-    <img src="EscudoLiverpool.png" alt="EscudoLiverpool">
-   </div>
-  </section>
-  <p>Real Madrid <br> (14 Titulos) </p> <p> Milan <br> (7 Titulos) </p> <p> Liverpool <br> (6 Titulos) </p>
-</div>
- <p>Pon aprueba tu conocimiento </p>
- <p>¿Quien es el jugador que posee mas trofeos de la Liga de campeones?</p>
- <input type="text" id="texto_lineas"/>
- <input type="button" value="Pruebalo" id="botoncito"/> 
- <p>Para mas informacion haga click <a href="https://es.uefa.com/uefachampionsleague/">aqui</a></p>
- <script>
-  var texto = document.getElementById("texto_lineas");
-  var boton = document.getElementById("botoncito");
-  boton.addEventListener("click" , DibujoporClick);
+  
+   <div class="cards-container">
+    <div class="player-card">
+       <img src="cr7.jpg" alt="CR7">
+     <div class="player-info">
+        Cristiano Ronaldo <br> 141 goles 
+     </div>
+    </div>
+     <div class="player-card">
+        <img src="Lm10.jpg" alt="Messi">
+     <div class="player-info">
+        Lionel Messi <br> 125 Goles
+     </div>
+    </div>
+      <div class="player-card">
+      <img src="Rl9.jpg" alt="Lewandowski">
+      <div class="player-info">
+        Robert Lewandowski <br> 86 Goles
+     </div>
+    </div>
+    <div class="player-card">
+      <img src="Kb9.jpg" alt="Benzema">
+      <div class="player-info">
+        Karim Benzema <br> 86 Goles
+     </div>
+    </div>
+    <div class="player-card">
+      <img src="Rg9.jpg" alt="Raúl">
+      <div class="player-info">
+        Raúl Gonzales <br> 71 Goles
+     </div>
+    </div>
+    <div class="player-card">
+      <img src="Rv10.png" alt="Ruud">
+      <div class="player-info">
+        Ruud Van Nistelrooy <br> 60 Goles
+     </div>
+    </div>
+    </div>
+    </div>
+  <div class="subtitle">Los equipos que ganaron mas veces esta competicion son :</div>
+ </div>
 
+ <div class="team-container">
+   <div class="team-card">
+    <img src="EscudoRm.png" alt="Rm" class="Rm-borde">
+    <div class="team-info">
+      Real Madrid <br> 14 Titulos
+    </div>
+   </div> 
+   
+   <div class="team-card">
+    <img src="escudoM.png" alt="Mi" class="Mi-borde">
+    <div class="team-info">
+       Milán <br> 7 Titulos 
+    </div>
+   </div>
 
-  function DibujoporClick()
-  {
-   if (texto=="Paco")
-   {
-    document.write("correcto")
-   }
-  }
- </script>
-</body>
-</html>
+   <div class="team-card">
+    <img src="EscudoLiverpool.png" alt="Lv" class="Lv-borde">
+    <div class="team-info">
+      Liverpool<br> 6 Titulos
+    </div>
+   </div>
+
+   <div class="team-card">
+    <img src="EscudoBm.png" alt="Bm" class="Bm-borde">
+    <div class="team-info">
+      Bayern Múnich<br> 6 Titulos 
+    </div>
+   </div>
+
+   <div class="team-card">
+    <img src="EscudoBr.png" alt="Br" class="Br-borde">
+    <div class="team-info">
+      Barcelona<br> 5 Titulos 
+    </div>
+   </div>
+
+ </div>
+ </body>

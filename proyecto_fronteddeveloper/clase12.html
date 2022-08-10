@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root {
+            --white: #FFFFFF;   
+            --black : #000000;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif ;
+        }
+        .primary-button {
+            background-color: var(--hospital-green);
+            border-radius: 8px;
+            border: none;
+            color : var(--white) ;
+            width: 100%;
+            cursor: pointer;
+            font-size: var(--md);
+            font-weight: bold;
+            height: 50px;
+        }
+        .add-to-cart-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .product-detail {
+            width: 360px;
+            padding-bottom: 24px;
+            position: absolute;
+            right: 0;
+        }
+        .product-detail-close {
+            background: var(--white);
+            width: 14px;
+            height: 14px;
+            position: absolute;
+            top : 24px;
+            left: 24px;
+            z-index: 2;
+            padding: 12px;
+            border-radius: 50%;
+        }
+        .product-detail-close img:hover {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+        }
+        .product-detail > img:nth-child(2) {
+           width: 100% ;
+           height: 360px;
+           object-fit: cover;
+           border-radius: 0 0 20px;           
+        }
+        .product-detail-close:hover{
+           cursor: pointer;
+        }
+        .product-info {
+            margin: 24px 24px 0 24px;
+        }
+        .product-info p:nth-child(1) {
+            font-weight: bold;
+            font-size: var(--md);
+            margin-top: 0;
+            margin-bottom: 4px;
+        }
+        .product-info p:nth-child(2) {
+            color: var(--very-light-pink);
+            font-size: var(--md);
+            margin-top: 0;
+            margin-bottom: 36px;
+        }
+        .product-info p:nth-child(3) {
+            color: var(--very-light-pink);
+            font-size: var(--sm);
+            margin-top: 0;
+            margin-bottom: 36px;
+        }
+        @media (max-width:640px) {
+            .product-detail{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <aside class="product-detail">
+        <div class="product-detail-close">
+           <img src="./icons/icon_close.png" alt="close">
+        </div>
+       <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/bc67174c1a9b45b59d4aadda00e390d2_9366/Chimpunes_Predator_Edge+_Terreno_Firme_Blanco_GV7375_01_standard.jpg" alt="Predator">
+       <div class="product-info">
+        <p>S/1000.00</p>
+        <p>Predator Edge+ Fg</p>
+        <p>Amague. Potencia. Control. Cuando tienes ventaja, la cancha está llena de posibilidades. Descubre el deporte rey desde un nuevo ángulo con los adidas Predator. Estos chimpunes sin pasadores te ayudan a anticipar todos los tiros gracias al exterior Zone Skin, que cuenta con discretas secciones acanaladas estratégicamente posicionadas y esculpidas para diferentes tipos de contacto con el balón. Un Power Facet le agrega peso al antepié de la suela dividida para darle más impulso a los ataques. El cuello elástico adidas PRIMEKNIT sujeta tu pie mientras perfeccionas tu juego.</p>
+        <button class="primary-button add-to-cart-button">
+           <img src="./icons/bt_add_to_cart.svg" alt="agregar al carrito">
+           Agregar al carrito 
+        </button>
+       </div>
+    </aside>
+</body>
+</html>

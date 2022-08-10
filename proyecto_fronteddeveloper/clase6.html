@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root {
+            --white: #FFFFFF;   
+            --black : #000000;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body {
+            margin: 10  ;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill , 240px);
+            gap: 26px;
+            place-content: center;
+        }
+        .product-card {
+            width: 240px;
+        }
+        .product-card img{
+            width: 100%;
+            height: 240px;
+            border-radius: 20px;
+            object-fit: contain;
+        }
+        .product-info div p:nth-child(1) {
+            font-weight: bold;
+            font-size: var(--md);
+            margin-top: 0px;
+            margin-bottom: 4px;
+        }
+        .product-info div p:nth-child(2) {
+            font-size: var(--sm);
+            margin-top: 0px;
+            margin-bottom: 0px;
+            color: var(--very-light-pink);
+        }
+        .product-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center ;
+            margin-top: 12px;
+        }
+        .product-info figure img {
+          width: 50px;
+          height: 50px;
+        }
+        .product-info figure {
+            margin: 0;
+        }
+        @media (max-width : 640px) {
+            .cards-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fill , 140px);
+            }
+            .product-card {
+                width: 140px;
+            }
+            .product-card img {
+             width: 140px;
+             height: 140px;
+            }
+        }
+    </style>
+</head>
+<body>
+  <section class="main-container">
+
+    <div class="cards-container">
+
+     <div class="product-card">
+
+     <img src="X_Speedportal.1.jpg" alt="">
+
+     <div class="product-info">
+        <div>
+      <p>S/1100.00</p>
+      <p>X speedportal.1 Fg</p>
+      </div>
+       <figure>
+         <img src="./icons/bt_add_to_cart.svg" alt="">
+       </figure>
+      </div>
+     </div>
+
+     <div class="product-card">
+
+      <img src="X_Speedportal+.jpg" alt="">
+   
+      <div class="product-info">
+        <div>
+      <p>S/1100.00</p>
+      <p>X speedportal+ Fg</p>
+      </div>
+       <figure>
+         <img src="./icons/bt_add_to_cart.svg" alt="">
+       </figure>
+      </div>
+     </div>
+        
+     <div class="product-card">
+
+       <img src="Predator_Edge+.jpg" alt="">  
+       
+       <div class="product-info">
+        <div>
+      <p>S/1100.00</p>
+      <p>Predator Edge+ Fg</p>
+      </div>
+       <figure>
+         <img src="./icons/bt_add_to_cart.svg" alt="">
+       </figure>
+      </div>
+     </div>
+
+     <div class="product-card">
+
+      <img src="X_Speedflow+.jpg" alt="">
+           
+      <div class="product-info">
+        <div>
+      <p>S/799.00</p>
+      <p>X speedflow+ Fg</p>
+      </div>
+       <figure>
+         <img src="./icons/bt_add_to_cart.svg" alt="">
+       </figure>
+      </div>
+     </div>
+
+     <div class="product-card">
+
+     <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/7c0aa2283d814246af6aacbf00e3f48a_9366/Chimpunes_Copa_Sense+_Terreno_Firme_Rojo_FY6217_01_standard.jpg" alt="">
+               
+     <div class="product-info">
+        <div>
+      <p>S/900.00</p>
+      <p>Copa Sense+ Fg</p>
+      </div>
+       <figure>
+         <img src="./icons/bt_add_to_cart.svg" alt="">
+       </figure>
+      </div>
+     </div>
+     
+     <div class="product-card">
+
+      <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ecb588207089408e8741acc2010d447c_9366/Chimpunes_Copa_Sense.1_Terreno_Firme_Rojo_FY6209_01_standard.jpg" alt="">
+                  
+      <div class="product-info">
+        <div>
+      <p>S/800.00</p>
+      <p>Copa Sense.1 Fg</p>
+      </div>
+       <figure>
+         <img src="./icons/bt_add_to_cart.svg" alt="">
+       </figure>
+      </div>
+     </div>
+
+     <div class="product-card">
+
+      <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/af8517a03050466ead01ae9e0106de78_9366/Chimpunes_X_Speedportal.3_Laceless_Cesped_Natural_Seco_Verde_GW8469_22_model.jpg  " alt="">
+                      
+      <div class="product-info">
+        <div>
+      <p>S/350.00</p>
+      <p>X speedportal.3 Fg</p>
+      </div>
+       <figure>
+         <img src="./icons/bt_add_to_cart.svg" alt="">
+       </figure>
+      </div>
+     </div>
+
+     <div class="product-card">
+
+      <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/e18e8425a0f24c309401ac7200cc307a_9366/Chimpunes_Predator_Freak+_Terreno_Firme_Negro_FW7617_01_standard.jpg" alt="">
+                      
+      <div class="product-info">
+        <div>
+      <p>S/750.00</p>
+      <p>Predator freak+ Fg</p>
+      </div>
+       <figure>
+         <img src="./icons/bt_add_to_cart.svg" alt="">
+       </figure>
+      </div>
+     </div>
+
+     <div class="product-card">
+
+      <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/45efd3dc8fe64c99935aae9b01073b9f_9366/Chimpunes_Copa_Sense+_Cesped_Natural_Seco_Amarillo_GW3609_22_model.jpg" alt="">
+                          
+      <div class="product-info">
+        <div>
+      <p>S/1000.00</p>
+      <p>Copa Sense+ Fg</p>
+      </div>
+       <figure>
+         <img src="./icons/bt_add_to_cart.svg" alt="">
+       </figure>
+      </div>
+     </div>
+     
+     <div class="product-card">
+
+       <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/73ae953f119f46a8951bae9e00ec1e41_9366/Chimpunes_Predator_3_Sin_Pasadores_Terreno_Firme_Naranja_GW1000_22_model.jpg" alt="">
+                              
+       <div class="product-info">
+        <div>
+      <p>S/350.00</p>
+      <p>Predator Edge.3 Fg</p>
+      </div>
+       <figure>
+         <img src="./icons/bt_add_to_cart.svg" alt="">
+       </figure>
+      </div>
+     </div>
+
+     <div class="product-card">
+
+      <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/644d728624ad478faa0eae750046f72c_9366/Chimpunes_Predator_Edge_Crystal+_Terreno_Firme_Verde_GX3913_22_model.jpg" alt="">
+                                  
+      <div class="product-info">
+        <div>
+      <p>S/1000.00</p>
+      <p>Predator Edge+ Fg</p>
+      </div>
+       <figure>
+         <img src="./icons/bt_add_to_cart.svg" alt="">
+       </figure>
+      </div>
+     </div>
+
+     <div class="product-card">
+
+      <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0631db80dc8449a696aaad8300aa83d4_9366/Chimpunes_Predator_Edge.3_Sin_Pasadores_Terreno_Firme_Negro_GV9859_01_standard.jpg  " alt="">
+                               
+      <div class="product-info">
+        <div>
+      <p>S/350.00</p>
+      <p>Predator Edge.3 Fg</p>
+      </div>
+       <figure>
+         <img src="./icons/bt_add_to_cart.svg" alt="">
+       </figure>
+      </div>
+     </div>
+
+     <div class="product-card">
+
+      <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/7ad175b804544c618badae9b01000915_9366/Chimpunes_Predator_Edge.1_Terreno_Firme_Naranja_GW1029_22_model.jpg" alt="">
+                               
+      <div class="product-info">
+        <div>
+      <p>S/900.00</p>
+      <p>Predator Edge.1 Fg</p>
+      </div>
+       <figure>
+         <img src="./icons/bt_add_to_cart.svg" alt="">
+       </figure>
+      </div>
+     </div>
+
+     <div class="product-card">
+
+      <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/53fb3d460dd3499c9741adda00ee39d9_9366/Chimpunes_Predator_Edge_Geometric+_Terreno_Firme_Azul_GX3908_01_standard.jpg" alt="">
+                               
+      <div class="product-info">
+        <div>
+      <p>S/1100.00</p>
+      <p>Predator Edge+ Fg</p>
+      </div>
+       <figure>
+         <img src="./icons/bt_add_to_cart.svg" alt="">
+       </figure>
+      </div>
+     </div>
+
+     <div class="product-card">
+
+        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/bc67174c1a9b45b59d4aadda00e390d2_9366/Chimpunes_Predator_Edge+_Terreno_Firme_Blanco_GV7375_01_standard.jpg" alt="">
+                               
+        <div class="product-info">
+            <div>
+          <p>S/1100.000</p>
+          <p>Predator Edge+ Fg</p>
+          </div>
+           <figure>
+             <img src="./icons/bt_add_to_cart.svg" alt="">
+           </figure>
+          </div>
+         </div>
+
+    </div>
+  </section>
+</body>
+</html>
